@@ -1,0 +1,31 @@
+[INFO    :   django.utils.autoreload] - 2024-01-14 19:12:14,628 : run_with_reloader @0668: Watching for file changes with StatReloader
+[WARNING :            django.request] - 2024-01-14 19:12:29,325 : log_response @0241: Not Found: /
+[WARNING :             django.server] - 2024-01-14 19:12:29,326 : log_message @0212: "GET / HTTP/1.1" 404 2167
+[DEBUG   :            app_hw_1.views] - 2024-01-14 19:12:39,755 : index @0023: Index page requested.
+[INFO    :             django.server] - 2024-01-14 19:12:39,758 : log_message @0212: "GET /hw_1/ HTTP/1.1" 200 368
+[DEBUG   :            app_hw_1.views] - 2024-01-14 19:12:52,831 : about @0042: About page requested.
+[INFO    :             django.server] - 2024-01-14 19:12:52,834 : log_message @0212: "GET /hw_1/about/ HTTP/1.1" 200 350
+[INFO    :   django.utils.autoreload] - 2024-01-20 20:43:10,041 : run_with_reloader @0668: Watching for file changes with StatReloader
+[INFO    :   django.utils.autoreload] - 2024-01-20 20:43:51,306 : trigger_reload @0266: C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\app_hw_2\views.py changed, reloading.
+[INFO    :   django.utils.autoreload] - 2024-01-20 20:43:52,538 : run_with_reloader @0668: Watching for file changes with StatReloader
+[WARNING :            django.request] - 2024-01-20 20:43:54,902 : log_response @0241: Not Found: /
+[WARNING :             django.server] - 2024-01-20 20:43:54,903 : log_message @0212: "GET / HTTP/1.1" 404 2272
+[INFO    :             django.server] - 2024-01-20 20:44:02,251 : log_message @0212: "GET /hw_1 HTTP/1.1" 301 0
+[DEBUG   :            app_hw_1.views] - 2024-01-20 20:44:02,261 : index @0023: Index page requested.
+[INFO    :             django.server] - 2024-01-20 20:44:02,262 : log_message @0212: "GET /hw_1/ HTTP/1.1" 200 368
+[ERROR   :            django.request] - 2024-01-20 20:44:07,662 : log_response @0241: Internal Server Error: /hw_2/
+Traceback (most recent call last):
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\app_hw_2\views.py", line 9, in index
+    users = User.object.all()
+            ^^^^^^^^^^^
+AttributeError: type object 'User' has no attribute 'object'. Did you mean: 'objects'?
+[ERROR   :             django.server] - 2024-01-20 20:44:07,665 : log_message @0212: "GET /hw_2/ HTTP/1.1" 500 65572
+[INFO    :   django.utils.autoreload] - 2024-01-20 20:44:56,118 : trigger_reload @0266: C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\app_hw_2\views.py changed, reloading.
+[INFO    :   django.utils.autoreload] - 2024-01-20 20:44:57,303 : run_with_reloader @0668: Watching for file changes with StatReloader
+[INFO    :             django.server] - 2024-01-20 20:44:57,596 : log_message @0212: "GET /hw_2/ HTTP/1.1" 200 165
