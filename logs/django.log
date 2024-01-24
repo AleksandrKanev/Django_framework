@@ -29,3 +29,1387 @@ AttributeError: type object 'User' has no attribute 'object'. Did you mean: 'obj
 [INFO    :   django.utils.autoreload] - 2024-01-20 20:44:56,118 : trigger_reload @0266: C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\app_hw_2\views.py changed, reloading.
 [INFO    :   django.utils.autoreload] - 2024-01-20 20:44:57,303 : run_with_reloader @0668: Watching for file changes with StatReloader
 [INFO    :             django.server] - 2024-01-20 20:44:57,596 : log_message @0212: "GET /hw_2/ HTTP/1.1" 200 165
+[INFO    :   django.utils.autoreload] - 2024-01-23 23:27:42,456 : run_with_reloader @0668: Watching for file changes with StatReloader
+[INFO    :   django.utils.autoreload] - 2024-01-23 23:28:37,710 : trigger_reload @0266: C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\hwproject\settings.py changed, reloading.
+[INFO    :   django.utils.autoreload] - 2024-01-23 23:28:38,955 : run_with_reloader @0668: Watching for file changes with StatReloader
+[WARNING :            django.request] - 2024-01-23 23:28:43,707 : log_response @0241: Not Found: /
+[WARNING :             django.server] - 2024-01-23 23:28:43,718 : log_message @0212: "GET / HTTP/1.1" 404 2377
+[WARNING :            django.request] - 2024-01-23 23:28:44,156 : log_response @0241: Not Found: /favicon.ico
+[WARNING :             django.server] - 2024-01-23 23:28:44,160 : log_message @0212: "GET /favicon.ico HTTP/1.1" 404 2428
+[ERROR   :            django.request] - 2024-01-23 23:28:55,160 : log_response @0241: Internal Server Error: /hw_3/
+Traceback (most recent call last):
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: app_hw_3_user
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\app_hw_3\views.py", line 10, in index
+    users_list = '<br>'.join([str(user) for user in users])
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\db\models\query.py", line 398, in __iter__
+    self._fetch_all()
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\db\models\query.py", line 1926, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: app_hw_3_user
+[ERROR   :             django.server] - 2024-01-23 23:28:55,179 : log_message @0212: "GET /hw_3/ HTTP/1.1" 500 128844
+[INFO    :   django.utils.autoreload] - 2024-01-23 23:29:38,797 : trigger_reload @0266: C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\app_hw_3\views.py changed, reloading.
+[INFO    :   django.utils.autoreload] - 2024-01-23 23:29:39,931 : run_with_reloader @0668: Watching for file changes with StatReloader
+[ERROR   :            django.request] - 2024-01-23 23:29:43,305 : log_response @0241: Internal Server Error: /hw_3/
+Traceback (most recent call last):
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\base.py", line 502, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'extended'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\app_hw_3\views.py", line 14, in index
+    return render(request, 'app_hw_3/index.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\base.py", line 504, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\base.py", line 565, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 1: 'extended'. Did you forget to register or load this tag?
+[ERROR   :             django.server] - 2024-01-23 23:29:43,324 : log_message @0212: "GET /hw_3/ HTTP/1.1" 500 133845
+[INFO    :   django.utils.autoreload] - 2024-01-23 23:31:45,554 : trigger_reload @0266: C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\app_hw_3\views.py changed, reloading.
+[INFO    :   django.utils.autoreload] - 2024-01-23 23:31:46,723 : run_with_reloader @0668: Watching for file changes with StatReloader
+[INFO    :             django.server] - 2024-01-23 23:34:47,348 : log_message @0212: "GET /hw_3/ HTTP/1.1" 200 279
+[INFO    :   django.utils.autoreload] - 2024-01-23 23:55:09,005 : trigger_reload @0266: C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\app_hw_3\models.py changed, reloading.
+[INFO    :   django.utils.autoreload] - 2024-01-23 23:55:11,133 : run_with_reloader @0668: Watching for file changes with StatReloader
+[INFO    :   django.utils.autoreload] - 2024-01-24 20:13:08,396 : trigger_reload @0266: C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\app_hw_3\models.py changed, reloading.
+[INFO    :   django.utils.autoreload] - 2024-01-24 20:13:13,086 : run_with_reloader @0668: Watching for file changes with StatReloader
+[INFO    :   django.utils.autoreload] - 2024-01-24 21:56:59,113 : run_with_reloader @0668: Watching for file changes with StatReloader
+[ERROR   :            django.request] - 2024-01-24 21:57:13,598 : log_response @0241: Internal Server Error: /hw_3/
+Traceback (most recent call last):
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\app_hw_3\views.py", line 14, in index
+    return render(request, 'app_hw_3/index.html', users_list)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\backends\django.py", line 57, in render
+    context = make_context(
+              ^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\context.py", line 286, in make_context
+    raise TypeError(
+TypeError: context must be a dict rather than str.
+[ERROR   :             django.server] - 2024-01-24 21:57:13,610 : log_message @0212: "GET /hw_3/ HTTP/1.1" 500 84208
+[INFO    :   django.utils.autoreload] - 2024-01-24 21:59:09,893 : run_with_reloader @0668: Watching for file changes with StatReloader
+[ERROR   :            django.request] - 2024-01-24 21:59:13,068 : log_response @0241: Internal Server Error: /hw_3/
+Traceback (most recent call last):
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\app_hw_3\views.py", line 14, in index
+    return render(request, 'app_hw_3/index.html', users_list)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\backends\django.py", line 57, in render
+    context = make_context(
+              ^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\context.py", line 286, in make_context
+    raise TypeError(
+TypeError: context must be a dict rather than str.
+[ERROR   :             django.server] - 2024-01-24 21:59:13,078 : log_message @0212: "GET /hw_3/ HTTP/1.1" 500 84208
+[INFO    :   django.utils.autoreload] - 2024-01-24 22:00:12,872 : trigger_reload @0266: C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\app_hw_3\views.py changed, reloading.
+[INFO    :   django.utils.autoreload] - 2024-01-24 22:00:14,084 : run_with_reloader @0668: Watching for file changes with StatReloader
+[INFO    :             django.server] - 2024-01-24 22:00:16,880 : log_message @0212: "GET /hw_3/ HTTP/1.1" 200 172
+[INFO    :   django.utils.autoreload] - 2024-01-24 22:00:43,568 : trigger_reload @0266: C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\app_hw_3\views.py changed, reloading.
+[INFO    :   django.utils.autoreload] - 2024-01-24 22:00:44,661 : run_with_reloader @0668: Watching for file changes with StatReloader
+[INFO    :   django.utils.autoreload] - 2024-01-24 22:02:11,063 : run_with_reloader @0668: Watching for file changes with StatReloader
+[INFO    :             django.server] - 2024-01-24 22:02:11,586 : log_message @0212: "GET /hw_3/ HTTP/1.1" 200 163
+[INFO    :             django.server] - 2024-01-24 22:02:13,863 : log_message @0212: "GET /hw_3/ HTTP/1.1" 200 163
+[INFO    :   django.utils.autoreload] - 2024-01-24 22:02:56,807 : trigger_reload @0266: C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\app_hw_3\views.py changed, reloading.
+[INFO    :   django.utils.autoreload] - 2024-01-24 22:02:57,956 : run_with_reloader @0668: Watching for file changes with StatReloader
+[INFO    :             django.server] - 2024-01-24 22:02:59,445 : log_message @0212: "GET /hw_3/ HTTP/1.1" 200 163
+[INFO    :             django.server] - 2024-01-24 22:03:00,493 : log_message @0212: "GET /hw_3/ HTTP/1.1" 200 163
+[INFO    :   django.utils.autoreload] - 2024-01-24 22:03:45,513 : run_with_reloader @0668: Watching for file changes with StatReloader
+[INFO    :             django.server] - 2024-01-24 22:03:46,891 : log_message @0212: "GET /hw_3/ HTTP/1.1" 200 170
+[INFO    :             django.server] - 2024-01-24 22:03:47,792 : log_message @0212: "GET /hw_3/ HTTP/1.1" 200 170
+[INFO    :             django.server] - 2024-01-24 22:03:48,865 : log_message @0212: "GET /hw_3/ HTTP/1.1" 200 170
+[INFO    :             django.server] - 2024-01-24 22:03:49,263 : log_message @0212: "GET /hw_3/ HTTP/1.1" 200 170
+[INFO    :   django.utils.autoreload] - 2024-01-24 22:06:13,559 : trigger_reload @0266: C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\app_hw_3\views.py changed, reloading.
+[INFO    :   django.utils.autoreload] - 2024-01-24 22:06:14,813 : run_with_reloader @0668: Watching for file changes with StatReloader
+[ERROR   :            django.request] - 2024-01-24 22:06:15,619 : log_response @0241: Internal Server Error: /hw_3/
+Traceback (most recent call last):
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\app_hw_3\views.py", line 14, in index
+    return render(request, 'app_hw_3/index.html', "123")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\backends\django.py", line 57, in render
+    context = make_context(
+              ^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\context.py", line 286, in make_context
+    raise TypeError(
+TypeError: context must be a dict rather than str.
+[ERROR   :             django.server] - 2024-01-24 22:06:15,636 : log_message @0212: "GET /hw_3/ HTTP/1.1" 500 83100
+[INFO    :   django.utils.autoreload] - 2024-01-24 22:07:54,669 : trigger_reload @0266: C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\app_hw_3\views.py changed, reloading.
+[INFO    :   django.utils.autoreload] - 2024-01-24 22:07:56,083 : run_with_reloader @0668: Watching for file changes with StatReloader
+[INFO    :             django.server] - 2024-01-24 22:07:57,965 : log_message @0212: "GET /hw_3/ HTTP/1.1" 200 170
+[INFO    :   django.utils.autoreload] - 2024-01-24 22:08:22,542 : run_with_reloader @0668: Watching for file changes with StatReloader
+[INFO    :             django.server] - 2024-01-24 22:08:24,189 : log_message @0212: "GET /hw_3/ HTTP/1.1" 200 420
+[INFO    :   django.utils.autoreload] - 2024-01-24 22:10:21,830 : trigger_reload @0266: C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\app_hw_3\views.py changed, reloading.
+[INFO    :   django.utils.autoreload] - 2024-01-24 22:10:22,973 : run_with_reloader @0668: Watching for file changes with StatReloader
+[INFO    :             django.server] - 2024-01-24 22:10:24,310 : log_message @0212: "GET /hw_3/ HTTP/1.1" 200 388
+[INFO    :   django.utils.autoreload] - 2024-01-24 22:11:54,716 : trigger_reload @0266: C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\app_hw_3\views.py changed, reloading.
+[INFO    :   django.utils.autoreload] - 2024-01-24 22:11:56,902 : run_with_reloader @0668: Watching for file changes with StatReloader
+[INFO    :             django.server] - 2024-01-24 22:13:19,738 : log_message @0212: "GET /hw_3/ HTTP/1.1" 200 163
+[INFO    :             django.server] - 2024-01-24 22:13:37,471 : log_message @0212: "GET /hw_3/ HTTP/1.1" 200 163
+[INFO    :             django.server] - 2024-01-24 22:13:38,431 : log_message @0212: "GET /hw_3/ HTTP/1.1" 200 163
+[INFO    :             django.server] - 2024-01-24 22:18:44,706 : log_message @0212: "GET /hw_3/ HTTP/1.1" 200 163
+[INFO    :             django.server] - 2024-01-24 22:18:45,588 : log_message @0212: "GET /hw_3/ HTTP/1.1" 200 163
+[INFO    :             django.server] - 2024-01-24 22:18:46,435 : log_message @0212: "GET /hw_3/ HTTP/1.1" 200 163
+[INFO    :             django.server] - 2024-01-24 22:18:52,127 : log_message @0212: "GET /hw_3/ HTTP/1.1" 200 163
+[INFO    :             django.server] - 2024-01-24 22:18:53,048 : log_message @0212: "GET /hw_3/ HTTP/1.1" 200 163
+[INFO    :             django.server] - 2024-01-24 22:18:53,869 : log_message @0212: "GET /hw_3/ HTTP/1.1" 200 163
+[INFO    :   django.utils.autoreload] - 2024-01-24 22:19:06,960 : run_with_reloader @0668: Watching for file changes with StatReloader
+[INFO    :             django.server] - 2024-01-24 22:19:10,288 : log_message @0212: "GET /hw_3/ HTTP/1.1" 200 163
+[INFO    :             django.server] - 2024-01-24 22:19:11,221 : log_message @0212: "GET /hw_3/ HTTP/1.1" 200 163
+[INFO    :             django.server] - 2024-01-24 22:19:25,334 : log_message @0212: "GET /hw_3/ HTTP/1.1" 200 167
+[INFO    :   django.utils.autoreload] - 2024-01-24 22:19:53,959 : trigger_reload @0266: C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\app_hw_3\views.py changed, reloading.
+[INFO    :   django.utils.autoreload] - 2024-01-24 22:19:55,148 : run_with_reloader @0668: Watching for file changes with StatReloader
+[INFO    :             django.server] - 2024-01-24 22:20:05,010 : log_message @0212: "GET /hw_3/ HTTP/1.1" 200 488
+[INFO    :             django.server] - 2024-01-24 22:20:18,784 : log_message @0212: "GET /hw_3/ HTTP/1.1" 200 443
+[INFO    :             django.server] - 2024-01-24 22:20:30,318 : log_message @0212: "GET /hw_3/ HTTP/1.1" 200 423
+[INFO    :   django.utils.autoreload] - 2024-01-24 22:21:57,575 : trigger_reload @0266: C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\app_hw_3\urls.py changed, reloading.
+[INFO    :   django.utils.autoreload] - 2024-01-24 22:21:58,817 : run_with_reloader @0668: Watching for file changes with StatReloader
+[INFO    :   django.utils.autoreload] - 2024-01-24 22:23:00,895 : trigger_reload @0266: C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\app_hw_3\views.py changed, reloading.
+[INFO    :   django.utils.autoreload] - 2024-01-24 22:23:02,046 : run_with_reloader @0668: Watching for file changes with StatReloader
+[INFO    :   django.utils.autoreload] - 2024-01-24 22:26:13,197 : trigger_reload @0266: C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\app_hw_3\views.py changed, reloading.
+[INFO    :   django.utils.autoreload] - 2024-01-24 22:26:15,320 : run_with_reloader @0668: Watching for file changes with StatReloader
+[INFO    :   django.utils.autoreload] - 2024-01-24 22:27:23,534 : trigger_reload @0266: C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\app_hw_3\views.py changed, reloading.
+[INFO    :   django.utils.autoreload] - 2024-01-24 22:27:24,856 : run_with_reloader @0668: Watching for file changes with StatReloader
+[ERROR   :            django.request] - 2024-01-24 22:27:39,465 : log_response @0241: Internal Server Error: /hw_3/orders/1
+Traceback (most recent call last):
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: index() got an unexpected keyword argument 'id'
+[ERROR   :             django.server] - 2024-01-24 22:27:39,468 : log_message @0212: "GET /hw_3/orders/1 HTTP/1.1" 500 62357
+[INFO    :   django.utils.autoreload] - 2024-01-24 22:28:16,140 : trigger_reload @0266: C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\app_hw_3\urls.py changed, reloading.
+[INFO    :   django.utils.autoreload] - 2024-01-24 22:28:17,347 : run_with_reloader @0668: Watching for file changes with StatReloader
+[INFO    :             django.server] - 2024-01-24 22:28:18,538 : log_message @0212: "GET /hw_3/orders/1 HTTP/1.1" 200 263
+[INFO    :             django.server] - 2024-01-24 22:29:17,136 : log_message @0212: "GET /hw_3/orders/1 HTTP/1.1" 200 194
+[INFO    :             django.server] - 2024-01-24 22:29:29,882 : log_message @0212: "GET /hw_3/orders/1 HTTP/1.1" 200 263
+[INFO    :   django.utils.autoreload] - 2024-01-24 22:30:26,808 : trigger_reload @0266: C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\app_hw_3\models.py changed, reloading.
+[INFO    :   django.utils.autoreload] - 2024-01-24 22:30:28,042 : run_with_reloader @0668: Watching for file changes with StatReloader
+[INFO    :             django.server] - 2024-01-24 22:30:28,355 : log_message @0212: "GET /hw_3/orders/1 HTTP/1.1" 200 284
+[INFO    :   django.utils.autoreload] - 2024-01-24 22:32:42,491 : trigger_reload @0266: C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\app_hw_3\models.py changed, reloading.
+[INFO    :   django.utils.autoreload] - 2024-01-24 22:32:43,658 : run_with_reloader @0668: Watching for file changes with StatReloader
+[INFO    :   django.utils.autoreload] - 2024-01-24 22:39:21,765 : trigger_reload @0266: C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\app_hw_3\models.py changed, reloading.
+[INFO    :   django.utils.autoreload] - 2024-01-24 22:39:22,971 : run_with_reloader @0668: Watching for file changes with StatReloader
+[INFO    :   django.utils.autoreload] - 2024-01-24 22:40:04,891 : trigger_reload @0266: C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\app_hw_3\models.py changed, reloading.
+[INFO    :   django.utils.autoreload] - 2024-01-24 22:40:06,050 : run_with_reloader @0668: Watching for file changes with StatReloader
+[ERROR   :            django.request] - 2024-01-24 22:40:11,304 : log_response @0241: Internal Server Error: /hw_3/orders/1
+Traceback (most recent call last):
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\app_hw_3\views.py", line 19, in get_orders
+    return render(request, 'app_hw_3/orders.html', {'orders': orders})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\defaulttags.py", line 241, in render
+    nodelist.append(node.render_annotated(context))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\base.py", line 1065, in render
+    return render_value_in_context(output, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\base.py", line 1042, in render_value_in_context
+    value = str(value)
+            ^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\app_hw_3\models.py", line 47, in __str__
+    return f'Client: {self.client}, product: {Product.object.get(pk=self.pk)}, total_price: {self.total_price}'
+                                              ^^^^^^^^^^^^^^
+AttributeError: type object 'Product' has no attribute 'object'. Did you mean: 'objects'?
+[ERROR   :             django.server] - 2024-01-24 22:40:11,324 : log_message @0212: "GET /hw_3/orders/1 HTTP/1.1" 500 150922
+[INFO    :   django.utils.autoreload] - 2024-01-24 22:42:11,461 : trigger_reload @0266: C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\app_hw_3\models.py changed, reloading.
+[INFO    :   django.utils.autoreload] - 2024-01-24 22:42:13,190 : run_with_reloader @0668: Watching for file changes with StatReloader
+[INFO    :             django.server] - 2024-01-24 22:42:13,460 : log_message @0212: "GET /hw_3/orders/1 HTTP/1.1" 200 292
+[INFO    :   django.utils.autoreload] - 2024-01-24 22:43:15,139 : trigger_reload @0266: C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\app_hw_3\models.py changed, reloading.
+[INFO    :   django.utils.autoreload] - 2024-01-24 22:43:16,269 : run_with_reloader @0668: Watching for file changes with StatReloader
+[ERROR   :            django.request] - 2024-01-24 22:43:19,434 : log_response @0241: Internal Server Error: /hw_3/orders/1
+Traceback (most recent call last):
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\app_hw_3\views.py", line 19, in get_orders
+    return render(request, 'app_hw_3/orders.html', {'orders': orders})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\defaulttags.py", line 241, in render
+    nodelist.append(node.render_annotated(context))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\base.py", line 1065, in render
+    return render_value_in_context(output, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\base.py", line 1042, in render_value_in_context
+    value = str(value)
+            ^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\app_hw_3\models.py", line 47, in __str__
+    return f'Client: {self.client}, product: {Product.objects.get(order_id=self.pk)}, total_price: {self.total_price}'
+                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\db\models\query.py", line 633, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\db\models\query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\db\models\query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\db\models\query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\db\models\sql\query.py", line 1602, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\db\models\sql\query.py", line 1634, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\db\models\sql\query.py", line 1484, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\db\models\sql\query.py", line 1296, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\db\models\sql\query.py", line 1761, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'order_id' into field. Choices are: add_date, id, info, order, price, product, quantity
+[ERROR   :             django.server] - 2024-01-24 22:43:19,450 : log_message @0212: "GET /hw_3/orders/1 HTTP/1.1" 500 202603
+[INFO    :   django.utils.autoreload] - 2024-01-24 22:43:49,673 : trigger_reload @0266: C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\app_hw_3\models.py changed, reloading.
+[INFO    :   django.utils.autoreload] - 2024-01-24 22:43:50,940 : run_with_reloader @0668: Watching for file changes with StatReloader
+[INFO    :             django.server] - 2024-01-24 22:43:51,166 : log_message @0212: "GET /hw_3/orders/1 HTTP/1.1" 200 292
+[INFO    :   django.utils.autoreload] - 2024-01-24 22:45:51,446 : trigger_reload @0266: C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\app_hw_3\models.py changed, reloading.
+[INFO    :   django.utils.autoreload] - 2024-01-24 22:45:52,712 : run_with_reloader @0668: Watching for file changes with StatReloader
+[ERROR   :            django.request] - 2024-01-24 22:45:57,205 : log_response @0241: Internal Server Error: /hw_3/orders/1
+Traceback (most recent call last):
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\app_hw_3\views.py", line 19, in get_orders
+    return render(request, 'app_hw_3/orders.html', {'orders': orders})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\defaulttags.py", line 241, in render
+    nodelist.append(node.render_annotated(context))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\base.py", line 1065, in render
+    return render_value_in_context(output, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\base.py", line 1042, in render_value_in_context
+    value = str(value)
+            ^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\app_hw_3\models.py", line 47, in __str__
+    return f'Client: {self.client}, product: {self.products.get(id=self.pk)}, total_price: {self.total_price}'
+                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\db\models\query.py", line 647, in get
+    raise self.model.DoesNotExist(
+app_hw_3.models.Product.DoesNotExist: Product matching query does not exist.
+[ERROR   :             django.server] - 2024-01-24 22:45:57,220 : log_message @0212: "GET /hw_3/orders/1 HTTP/1.1" 500 159048
+[INFO    :   django.utils.autoreload] - 2024-01-24 22:46:17,956 : trigger_reload @0266: C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\app_hw_3\models.py changed, reloading.
+[INFO    :   django.utils.autoreload] - 2024-01-24 22:46:19,590 : run_with_reloader @0668: Watching for file changes with StatReloader
+[INFO    :             django.server] - 2024-01-24 22:46:22,036 : log_message @0212: "GET /hw_3/orders/1 HTTP/1.1" 200 284
+[INFO    :   django.utils.autoreload] - 2024-01-24 22:48:28,459 : trigger_reload @0266: C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\app_hw_3\models.py changed, reloading.
+[INFO    :   django.utils.autoreload] - 2024-01-24 22:48:29,705 : run_with_reloader @0668: Watching for file changes with StatReloader
+[ERROR   :            django.request] - 2024-01-24 22:48:32,394 : log_response @0241: Internal Server Error: /hw_3/orders/1
+Traceback (most recent call last):
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\app_hw_3\views.py", line 19, in get_orders
+    return render(request, 'app_hw_3/orders.html', {'orders': orders})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\defaulttags.py", line 241, in render
+    nodelist.append(node.render_annotated(context))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\base.py", line 1065, in render
+    return render_value_in_context(output, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\base.py", line 1042, in render_value_in_context
+    value = str(value)
+            ^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\app_hw_3\models.py", line 47, in __str__
+    return f'Client: {self.client}, product: {self.products.product_set.all()}, total_price: {self.total_price}'
+                                              ^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ManyRelatedManager' object has no attribute 'product_set'
+[ERROR   :             django.server] - 2024-01-24 22:48:32,414 : log_message @0212: "GET /hw_3/orders/1 HTTP/1.1" 500 151276
+[INFO    :   django.utils.autoreload] - 2024-01-24 22:49:47,505 : trigger_reload @0266: C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\app_hw_3\models.py changed, reloading.
+[INFO    :   django.utils.autoreload] - 2024-01-24 22:49:48,679 : run_with_reloader @0668: Watching for file changes with StatReloader
+[INFO    :   django.utils.autoreload] - 2024-01-24 22:55:31,784 : trigger_reload @0266: C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\app_hw_3\models.py changed, reloading.
+[INFO    :   django.utils.autoreload] - 2024-01-24 22:55:32,920 : run_with_reloader @0668: Watching for file changes with StatReloader
+[INFO    :   django.utils.autoreload] - 2024-01-24 22:56:00,461 : trigger_reload @0266: C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\app_hw_3\models.py changed, reloading.
+[INFO    :   django.utils.autoreload] - 2024-01-24 22:56:01,568 : run_with_reloader @0668: Watching for file changes with StatReloader
+[INFO    :             django.server] - 2024-01-24 22:56:03,538 : log_message @0212: "GET /hw_3/orders/1 HTTP/1.1" 200 377
+[INFO    :   django.utils.autoreload] - 2024-01-24 22:57:36,180 : trigger_reload @0266: C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\app_hw_3\models.py changed, reloading.
+[INFO    :   django.utils.autoreload] - 2024-01-24 22:57:37,271 : run_with_reloader @0668: Watching for file changes with StatReloader
+[INFO    :   django.utils.autoreload] - 2024-01-24 22:57:49,184 : trigger_reload @0266: C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\app_hw_3\models.py changed, reloading.
+[INFO    :   django.utils.autoreload] - 2024-01-24 22:57:50,408 : run_with_reloader @0668: Watching for file changes with StatReloader
+[INFO    :             django.server] - 2024-01-24 22:57:53,249 : log_message @0212: "GET /hw_3/orders/1 HTTP/1.1" 200 360
+[INFO    :             django.server] - 2024-01-24 22:57:55,979 : log_message @0212: "GET /hw_3/orders/1 HTTP/1.1" 200 360
+[INFO    :             django.server] - 2024-01-24 22:57:57,091 : log_message @0212: "GET /hw_3/orders/1 HTTP/1.1" 200 360
+[INFO    :             django.server] - 2024-01-24 22:57:58,356 : log_message @0212: "GET /hw_3/orders/1 HTTP/1.1" 200 360
+[INFO    :             django.server] - 2024-01-24 22:57:59,364 : log_message @0212: "GET /hw_3/orders/1 HTTP/1.1" 200 360
+[INFO    :   django.utils.autoreload] - 2024-01-24 22:58:35,379 : trigger_reload @0266: C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\app_hw_3\models.py changed, reloading.
+[INFO    :   django.utils.autoreload] - 2024-01-24 22:58:37,912 : run_with_reloader @0668: Watching for file changes with StatReloader
+[INFO    :             django.server] - 2024-01-24 22:58:38,562 : log_message @0212: "GET /hw_3/orders/1 HTTP/1.1" 200 350
+[INFO    :   django.utils.autoreload] - 2024-01-24 23:00:19,345 : trigger_reload @0266: C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\app_hw_3\models.py changed, reloading.
+[INFO    :   django.utils.autoreload] - 2024-01-24 23:00:20,511 : run_with_reloader @0668: Watching for file changes with StatReloader
+[INFO    :             django.server] - 2024-01-24 23:00:22,613 : log_message @0212: "GET /hw_3/orders/1 HTTP/1.1" 200 215
+[INFO    :   django.utils.autoreload] - 2024-01-24 23:01:33,575 : trigger_reload @0266: C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\app_hw_3\models.py changed, reloading.
+[INFO    :   django.utils.autoreload] - 2024-01-24 23:01:34,788 : run_with_reloader @0668: Watching for file changes with StatReloader
+[INFO    :             django.server] - 2024-01-24 23:01:35,149 : log_message @0212: "GET /hw_3/orders/1 HTTP/1.1" 200 224
+[INFO    :   django.utils.autoreload] - 2024-01-24 23:02:59,162 : trigger_reload @0266: C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\app_hw_3\views.py changed, reloading.
+[INFO    :   django.utils.autoreload] - 2024-01-24 23:03:00,314 : run_with_reloader @0668: Watching for file changes with StatReloader
+[INFO    :             django.server] - 2024-01-24 23:03:03,453 : log_message @0212: "GET /hw_3/orders/1 HTTP/1.1" 200 346
+[ERROR   :            django.request] - 2024-01-24 23:05:37,487 : log_response @0241: Internal Server Error: /hw_3/orders/1
+Traceback (most recent call last):
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\app_hw_3\views.py", line 19, in get_orders
+    return render(request, 'app_hw_3/orders.html', {'orders': orders})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\defaulttags.py", line 241, in render
+    nodelist.append(node.render_annotated(context))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\defaulttags.py", line 478, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\urls\resolvers.py", line 848, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'post_full' not found. 'post_full' is not a valid view function or pattern name.
+[ERROR   :             django.server] - 2024-01-24 23:05:37,504 : log_message @0212: "GET /hw_3/orders/1 HTTP/1.1" 500 159615
+[INFO    :   django.utils.autoreload] - 2024-01-24 23:07:15,358 : trigger_reload @0266: C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\app_hw_3\urls.py changed, reloading.
+[INFO    :   django.utils.autoreload] - 2024-01-24 23:07:17,083 : run_with_reloader @0668: Watching for file changes with StatReloader
+[ERROR   :            django.request] - 2024-01-24 23:07:18,813 : log_response @0241: Internal Server Error: /hw_3/orders/1
+Traceback (most recent call last):
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\app_hw_3\views.py", line 19, in get_orders
+    return render(request, 'app_hw_3/orders.html', {'orders': orders})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\defaulttags.py", line 241, in render
+    nodelist.append(node.render_annotated(context))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\defaulttags.py", line 478, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\urls\resolvers.py", line 848, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'get_proucts' not found. 'get_proucts' is not a valid view function or pattern name.
+[ERROR   :             django.server] - 2024-01-24 23:07:18,838 : log_message @0212: "GET /hw_3/orders/1 HTTP/1.1" 500 159668
+[INFO    :   django.utils.autoreload] - 2024-01-24 23:07:55,585 : trigger_reload @0266: C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\app_hw_3\views.py changed, reloading.
+[INFO    :   django.utils.autoreload] - 2024-01-24 23:07:57,449 : run_with_reloader @0668: Watching for file changes with StatReloader
+[ERROR   :            django.request] - 2024-01-24 23:07:57,910 : log_response @0241: Internal Server Error: /hw_3/orders/1
+Traceback (most recent call last):
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\app_hw_3\views.py", line 19, in get_orders
+    return render(request, 'app_hw_3/orders.html', {'orders': orders})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\defaulttags.py", line 241, in render
+    nodelist.append(node.render_annotated(context))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\defaulttags.py", line 478, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\urls\resolvers.py", line 848, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'get_proucts' not found. 'get_proucts' is not a valid view function or pattern name.
+[ERROR   :             django.server] - 2024-01-24 23:07:57,929 : log_message @0212: "GET /hw_3/orders/1 HTTP/1.1" 500 160190
+[ERROR   :            django.request] - 2024-01-24 23:08:24,446 : log_response @0241: Internal Server Error: /hw_3/orders/1
+Traceback (most recent call last):
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\app_hw_3\views.py", line 19, in get_orders
+    return render(request, 'app_hw_3/orders.html', {'orders': orders})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\defaulttags.py", line 241, in render
+    nodelist.append(node.render_annotated(context))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\defaulttags.py", line 478, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\urls\resolvers.py", line 848, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'get_products' with arguments '('',)' not found. 1 pattern(s) tried: ['hw_3/products/(?P<order_id>[0-9]+)\\Z']
+[ERROR   :             django.server] - 2024-01-24 23:08:24,460 : log_message @0212: "GET /hw_3/orders/1 HTTP/1.1" 500 163363
+[INFO    :   django.utils.autoreload] - 2024-01-24 23:10:13,503 : trigger_reload @0266: C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\app_hw_3\views.py changed, reloading.
+[INFO    :   django.utils.autoreload] - 2024-01-24 23:10:15,703 : run_with_reloader @0668: Watching for file changes with StatReloader
+[ERROR   :            django.request] - 2024-01-24 23:10:16,194 : log_response @0241: Internal Server Error: /hw_3/orders/1
+Traceback (most recent call last):
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\app_hw_3\views.py", line 19, in get_orders
+    return render(request, 'app_hw_3/orders.html', {'orders': orders})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\defaulttags.py", line 241, in render
+    nodelist.append(node.render_annotated(context))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\defaulttags.py", line 478, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\urls\resolvers.py", line 848, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'get_products' with arguments '('',)' not found. 1 pattern(s) tried: ['hw_3/products/(?P<order_id>[0-9]+)\\Z']
+[ERROR   :             django.server] - 2024-01-24 23:10:16,215 : log_message @0212: "GET /hw_3/orders/1 HTTP/1.1" 500 163479
+[INFO    :             django.server] - 2024-01-24 23:11:47,022 : log_message @0212: "GET /hw_3/orders/1 HTTP/1.1" 200 439
+[ERROR   :            django.request] - 2024-01-24 23:11:48,390 : log_response @0241: Internal Server Error: /hw_3/products/3
+Traceback (most recent call last):
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: get_orders() got an unexpected keyword argument 'order_id'
+[ERROR   :             django.server] - 2024-01-24 23:11:48,392 : log_message @0212: "GET /hw_3/products/3 HTTP/1.1" 500 62604
+[INFO    :   django.utils.autoreload] - 2024-01-24 23:15:59,654 : trigger_reload @0266: C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\app_hw_3\views.py changed, reloading.
+[INFO    :   django.utils.autoreload] - 2024-01-24 23:16:01,674 : run_with_reloader @0668: Watching for file changes with StatReloader
+[ERROR   :            django.request] - 2024-01-24 23:16:02,231 : log_response @0241: Internal Server Error: /hw_3/products/3
+Traceback (most recent call last):
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: get_orders() got an unexpected keyword argument 'order_id'
+[ERROR   :             django.server] - 2024-01-24 23:16:02,234 : log_message @0212: "GET /hw_3/products/3 HTTP/1.1" 500 62741
+[ERROR   :            django.request] - 2024-01-24 23:16:06,629 : log_response @0241: Internal Server Error: /hw_3/products/1
+Traceback (most recent call last):
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: get_orders() got an unexpected keyword argument 'order_id'
+[ERROR   :             django.server] - 2024-01-24 23:16:06,631 : log_message @0212: "GET /hw_3/products/1 HTTP/1.1" 500 62604
+[INFO    :   django.utils.autoreload] - 2024-01-24 23:17:45,786 : trigger_reload @0266: C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\app_hw_3\urls.py changed, reloading.
+[INFO    :   django.utils.autoreload] - 2024-01-24 23:17:47,061 : run_with_reloader @0668: Watching for file changes with StatReloader
+[INFO    :   django.utils.autoreload] - 2024-01-24 23:18:03,692 : trigger_reload @0266: C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\app_hw_3\urls.py changed, reloading.
+[INFO    :   django.utils.autoreload] - 2024-01-24 23:18:05,188 : run_with_reloader @0668: Watching for file changes with StatReloader
+[ERROR   :            django.request] - 2024-01-24 23:18:05,628 : log_response @0241: Internal Server Error: /hw_3/products/1
+Traceback (most recent call last):
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\app_hw_3\views.py", line 24, in get_products
+    return render(request, 'app_hw_3/orders_products.html', {'products': orders.products.all()})
+                                                                         ^^^^^^^^^^^^^^^
+AttributeError: 'QuerySet' object has no attribute 'products'
+[ERROR   :             django.server] - 2024-01-24 23:18:05,636 : log_message @0212: "GET /hw_3/products/1 HTTP/1.1" 500 66052
+[INFO    :   django.utils.autoreload] - 2024-01-24 23:18:24,739 : run_with_reloader @0668: Watching for file changes with StatReloader
+[INFO    :             django.server] - 2024-01-24 23:18:33,101 : log_message @0212: "GET /hw_3/orders/1 HTTP/1.1" 200 439
+[ERROR   :            django.request] - 2024-01-24 23:18:34,910 : log_response @0241: Internal Server Error: /hw_3/products/2
+Traceback (most recent call last):
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\app_hw_3\views.py", line 24, in get_products
+    return render(request, 'app_hw_3/orders_products.html', {'products': orders.products.all()})
+                                                                         ^^^^^^^^^^^^^^^
+AttributeError: 'QuerySet' object has no attribute 'products'
+[ERROR   :             django.server] - 2024-01-24 23:18:34,915 : log_message @0212: "GET /hw_3/products/2 HTTP/1.1" 500 65915
+[INFO    :   django.utils.autoreload] - 2024-01-24 23:20:07,421 : trigger_reload @0266: C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\app_hw_3\views.py changed, reloading.
+[INFO    :   django.utils.autoreload] - 2024-01-24 23:20:08,655 : run_with_reloader @0668: Watching for file changes with StatReloader
+[ERROR   :            django.request] - 2024-01-24 23:20:09,171 : log_response @0241: Internal Server Error: /hw_3/products/2
+Traceback (most recent call last):
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\app_hw_3\views.py", line 24, in get_products
+    print(orders.products.all())
+          ^^^^^^^^^^^^^^^
+AttributeError: 'QuerySet' object has no attribute 'products'
+[ERROR   :             django.server] - 2024-01-24 23:20:09,176 : log_message @0212: "GET /hw_3/products/2 HTTP/1.1" 500 66120
+[INFO    :   django.utils.autoreload] - 2024-01-24 23:21:12,614 : trigger_reload @0266: C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\app_hw_3\models.py changed, reloading.
+[INFO    :   django.utils.autoreload] - 2024-01-24 23:21:14,266 : run_with_reloader @0668: Watching for file changes with StatReloader
+[INFO    :   django.utils.autoreload] - 2024-01-24 23:22:56,003 : trigger_reload @0266: C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\app_hw_3\models.py changed, reloading.
+[INFO    :   django.utils.autoreload] - 2024-01-24 23:22:57,207 : run_with_reloader @0668: Watching for file changes with StatReloader
+[ERROR   :            django.request] - 2024-01-24 23:22:58,876 : log_response @0241: Internal Server Error: /hw_3/products/2
+Traceback (most recent call last):
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\app_hw_3\views.py", line 24, in get_products
+    print(orders.products.all())
+          ^^^^^^^^^^^^^^^
+AttributeError: 'QuerySet' object has no attribute 'products'
+[ERROR   :             django.server] - 2024-01-24 23:22:58,882 : log_message @0212: "GET /hw_3/products/2 HTTP/1.1" 500 66113
+[INFO    :   django.utils.autoreload] - 2024-01-24 23:23:15,121 : run_with_reloader @0668: Watching for file changes with StatReloader
+[ERROR   :            django.request] - 2024-01-24 23:23:19,225 : log_response @0241: Internal Server Error: /hw_3/products/2
+Traceback (most recent call last):
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\app_hw_3\views.py", line 24, in get_products
+    print(orders.products.all())
+          ^^^^^^^^^^^^^^^
+AttributeError: 'QuerySet' object has no attribute 'products'
+[ERROR   :             django.server] - 2024-01-24 23:23:19,232 : log_message @0212: "GET /hw_3/products/2 HTTP/1.1" 500 65949
+[INFO    :             django.server] - 2024-01-24 23:23:36,740 : log_message @0212: "GET /hw_3/orders/1 HTTP/1.1" 200 439
+[ERROR   :            django.request] - 2024-01-24 23:23:37,912 : log_response @0241: Internal Server Error: /hw_3/products/3
+Traceback (most recent call last):
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\app_hw_3\views.py", line 24, in get_products
+    print(orders.products.all())
+          ^^^^^^^^^^^^^^^
+AttributeError: 'QuerySet' object has no attribute 'products'
+[ERROR   :             django.server] - 2024-01-24 23:23:37,917 : log_message @0212: "GET /hw_3/products/3 HTTP/1.1" 500 65976
+[INFO    :   django.utils.autoreload] - 2024-01-24 23:23:58,568 : trigger_reload @0266: C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\app_hw_3\views.py changed, reloading.
+[INFO    :   django.utils.autoreload] - 2024-01-24 23:23:59,758 : run_with_reloader @0668: Watching for file changes with StatReloader
+[ERROR   :            django.request] - 2024-01-24 23:24:01,266 : log_response @0241: Internal Server Error: /hw_3/products/3
+Traceback (most recent call last):
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\app_hw_3\views.py", line 25, in get_products
+    return render(request, 'app_hw_3/orders_products.html', {'products': orders})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: app_hw_3/orders_products.html
+[ERROR   :             django.server] - 2024-01-24 23:24:01,274 : log_message @0212: "GET /hw_3/products/3 HTTP/1.1" 500 82192
+[INFO    :   django.utils.autoreload] - 2024-01-24 23:25:00,471 : trigger_reload @0266: C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\app_hw_3\views.py changed, reloading.
+[INFO    :   django.utils.autoreload] - 2024-01-24 23:25:01,691 : run_with_reloader @0668: Watching for file changes with StatReloader
+[ERROR   :            django.request] - 2024-01-24 23:25:04,048 : log_response @0241: Internal Server Error: /hw_3/products/3
+Traceback (most recent call last):
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\app_hw_3\views.py", line 25, in get_products
+    return render(request, 'app_hw_3/orders_products.html', {'products': orders})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: app_hw_3/orders_products.html
+[ERROR   :             django.server] - 2024-01-24 23:25:04,059 : log_message @0212: "GET /hw_3/products/3 HTTP/1.1" 500 82175
+[INFO    :   django.utils.autoreload] - 2024-01-24 23:26:53,904 : trigger_reload @0266: C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\app_hw_3\views.py changed, reloading.
+[INFO    :   django.utils.autoreload] - 2024-01-24 23:26:55,134 : run_with_reloader @0668: Watching for file changes with StatReloader
+[ERROR   :            django.request] - 2024-01-24 23:26:55,460 : log_response @0241: Internal Server Error: /hw_3/products/3
+Traceback (most recent call last):
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\app_hw_3\views.py", line 25, in get_products
+    return render(request, 'app_hw_3/orders_products.html', {'products': orders})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: app_hw_3/orders_products.html
+[ERROR   :             django.server] - 2024-01-24 23:26:55,467 : log_message @0212: "GET /hw_3/products/3 HTTP/1.1" 500 82115
+[INFO    :   django.utils.autoreload] - 2024-01-24 23:27:30,472 : trigger_reload @0266: C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\app_hw_3\views.py changed, reloading.
+[INFO    :   django.utils.autoreload] - 2024-01-24 23:27:31,626 : run_with_reloader @0668: Watching for file changes with StatReloader
+[ERROR   :            django.request] - 2024-01-24 23:27:35,357 : log_response @0241: Internal Server Error: /hw_3/products/3
+Traceback (most recent call last):
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\app_hw_3\views.py", line 25, in get_products
+    return render(request, 'app_hw_3/orders_products.html', {'products': orders})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: app_hw_3/orders_products.html
+[ERROR   :             django.server] - 2024-01-24 23:27:35,361 : log_message @0212: "GET /hw_3/products/3 HTTP/1.1" 500 82130
+[INFO    :   django.utils.autoreload] - 2024-01-24 23:28:05,308 : trigger_reload @0266: C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\app_hw_3\views.py changed, reloading.
+[INFO    :   django.utils.autoreload] - 2024-01-24 23:28:06,605 : run_with_reloader @0668: Watching for file changes with StatReloader
+[ERROR   :            django.request] - 2024-01-24 23:28:07,086 : log_response @0241: Internal Server Error: /hw_3/products/3
+Traceback (most recent call last):
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\app_hw_3\views.py", line 25, in get_products
+    return render(request, 'app_hw_3/orders_products.html', {'products': orders.products.all()})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: app_hw_3/orders_products.html
+[ERROR   :             django.server] - 2024-01-24 23:28:07,092 : log_message @0212: "GET /hw_3/products/3 HTTP/1.1" 500 82275
+[INFO    :             django.server] - 2024-01-24 23:33:38,431 : log_message @0212: "GET /hw_3/orders/1 HTTP/1.1" 200 439
+[INFO    :             django.server] - 2024-01-24 23:33:43,732 : log_message @0212: "GET /hw_3/orders/5 HTTP/1.1" 200 445
+[ERROR   :            django.request] - 2024-01-24 23:33:45,714 : log_response @0241: Internal Server Error: /hw_3/products/13
+Traceback (most recent call last):
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\app_hw_3\views.py", line 25, in get_products
+    return render(request, 'app_hw_3/orders_products.html', {'products': orders.products.all()})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: app_hw_3/orders_products.html
+[ERROR   :             django.server] - 2024-01-24 23:33:45,719 : log_message @0212: "GET /hw_3/products/13 HTTP/1.1" 500 82159
+[INFO    :   django.utils.autoreload] - 2024-01-24 23:35:32,348 : trigger_reload @0266: C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\app_hw_3\views.py changed, reloading.
+[INFO    :   django.utils.autoreload] - 2024-01-24 23:35:33,566 : run_with_reloader @0668: Watching for file changes with StatReloader
+[INFO    :   django.utils.autoreload] - 2024-01-24 23:36:30,652 : trigger_reload @0266: C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\app_hw_3\views.py changed, reloading.
+[INFO    :   django.utils.autoreload] - 2024-01-24 23:36:31,860 : run_with_reloader @0668: Watching for file changes with StatReloader
+[ERROR   :            django.request] - 2024-01-24 23:36:32,310 : log_response @0241: Internal Server Error: /hw_3/products/13
+Traceback (most recent call last):
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\app_hw_3\views.py", line 24, in get_products
+    return render(request, 'app_hw_3/orders_products.html', {'products': 'orders.products.all()'})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: app_hw_3/orders_products.html
+[ERROR   :             django.server] - 2024-01-24 23:36:32,317 : log_message @0212: "GET /hw_3/products/13 HTTP/1.1" 500 82179
+[ERROR   :            django.request] - 2024-01-24 23:36:37,295 : log_response @0241: Internal Server Error: /hw_3/products/13
+Traceback (most recent call last):
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\app_hw_3\views.py", line 24, in get_products
+    return render(request, 'app_hw_3/orders_products.html', {'products': 'orders.products.all()'})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: app_hw_3/orders_products.html
+[ERROR   :             django.server] - 2024-01-24 23:36:37,299 : log_message @0212: "GET /hw_3/products/13 HTTP/1.1" 500 82179
+[INFO    :   django.utils.autoreload] - 2024-01-24 23:39:38,914 : trigger_reload @0266: C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\app_hw_3\views.py changed, reloading.
+[INFO    :   django.utils.autoreload] - 2024-01-24 23:39:40,131 : run_with_reloader @0668: Watching for file changes with StatReloader
+[ERROR   :            django.request] - 2024-01-24 23:39:43,214 : log_response @0241: Internal Server Error: /hw_3/products/13
+Traceback (most recent call last):
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\app_hw_3\views.py", line 23, in get_products
+    orders = get_object_or_404.get(Order, id=order_id)
+             ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'function' object has no attribute 'get'
+[ERROR   :             django.server] - 2024-01-24 23:39:43,219 : log_message @0212: "GET /hw_3/products/13 HTTP/1.1" 500 65897
+[INFO    :   django.utils.autoreload] - 2024-01-24 23:40:36,622 : trigger_reload @0266: C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\app_hw_3\views.py changed, reloading.
+[INFO    :   django.utils.autoreload] - 2024-01-24 23:40:37,849 : run_with_reloader @0668: Watching for file changes with StatReloader
+[ERROR   :            django.request] - 2024-01-24 23:40:39,140 : log_response @0241: Internal Server Error: /hw_3/products/13
+Traceback (most recent call last):
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\app_hw_3\views.py", line 24, in get_products
+    return render(request, 'app_hw_3/orders_products.html', {'products': 'orders.products.all()'})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: app_hw_3/orders_products.html
+[ERROR   :             django.server] - 2024-01-24 23:40:39,145 : log_message @0212: "GET /hw_3/products/13 HTTP/1.1" 500 81968
+[INFO    :   django.utils.autoreload] - 2024-01-24 23:41:34,044 : trigger_reload @0266: C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\app_hw_3\views.py changed, reloading.
+[INFO    :   django.utils.autoreload] - 2024-01-24 23:41:35,249 : run_with_reloader @0668: Watching for file changes with StatReloader
+[ERROR   :            django.request] - 2024-01-24 23:41:40,942 : log_response @0241: Internal Server Error: /hw_3/products/13
+Traceback (most recent call last):
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\app_hw_3\views.py", line 24, in get_products
+    return render(request, 'app_hw_3/orders_products.html', {'products': orders.products.all()})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: app_hw_3/orders_products.html
+[ERROR   :             django.server] - 2024-01-24 23:41:40,947 : log_message @0212: "GET /hw_3/products/13 HTTP/1.1" 500 82313
+[ERROR   :            django.request] - 2024-01-24 23:41:46,539 : log_response @0241: Internal Server Error: /hw_3/products/10
+Traceback (most recent call last):
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\app_hw_3\views.py", line 24, in get_products
+    return render(request, 'app_hw_3/orders_products.html', {'products': orders.products.all()})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: app_hw_3/orders_products.html
+[ERROR   :             django.server] - 2024-01-24 23:41:46,547 : log_message @0212: "GET /hw_3/products/10 HTTP/1.1" 500 82012
+[WARNING :            django.request] - 2024-01-24 23:42:13,754 : log_response @0241: Not Found: /favicon.ico
+[WARNING :             django.server] - 2024-01-24 23:42:13,755 : log_message @0212: "GET /favicon.ico HTTP/1.1" 404 2428
+[INFO    :   django.utils.autoreload] - 2024-01-24 23:44:21,735 : trigger_reload @0266: C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\app_hw_3\views.py changed, reloading.
+[INFO    :   django.utils.autoreload] - 2024-01-24 23:44:22,994 : run_with_reloader @0668: Watching for file changes with StatReloader
+[INFO    :             django.server] - 2024-01-24 23:44:23,283 : log_message @0212: "GET /hw_3/products/10 HTTP/1.1" 200 258
+[INFO    :             django.server] - 2024-01-24 23:44:34,271 : log_message @0212: "GET /hw_3/ HTTP/1.1" 200 423
+[INFO    :             django.server] - 2024-01-24 23:44:50,115 : log_message @0212: "GET /hw_3/orders/5 HTTP/1.1" 200 445
+[INFO    :             django.server] - 2024-01-24 23:44:51,737 : log_message @0212: "GET /hw_3/products/14 HTTP/1.1" 200 256
+[INFO    :   django.utils.autoreload] - 2024-01-24 23:45:27,787 : trigger_reload @0266: C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\app_hw_3\views.py changed, reloading.
+[INFO    :   django.utils.autoreload] - 2024-01-24 23:45:28,927 : run_with_reloader @0668: Watching for file changes with StatReloader
