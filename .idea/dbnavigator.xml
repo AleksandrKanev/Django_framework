@@ -20,9 +20,7 @@
     <last-used-providers />
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
-    <open-files>
-      <object connection-id="2a53a5e0-eeff-4e2c-ab40-ea5688a2d5e2" object-ref="schemas/main/tables/app_hw_4_product" />
-    </open-files>
+    <open-files />
   </component>
   <component name="DBNavigator.Project.DatabaseSessionManager">
     <connection id="2a53a5e0-eeff-4e2c-ab40-ea5688a2d5e2" />
@@ -32,12 +30,13 @@
     <filter-actions connection-id="2a53a5e0-eeff-4e2c-ab40-ea5688a2d5e2" dataset="main.app_hw_4_user" active-filter-id="EMPTY_FILTER" />
     <filter-actions connection-id="2a53a5e0-eeff-4e2c-ab40-ea5688a2d5e2" dataset="main.app_hw_2_order" active-filter-id="" />
     <filter-actions connection-id="2a53a5e0-eeff-4e2c-ab40-ea5688a2d5e2" dataset="main.app_hw_2_order_product" active-filter-id="" />
-    <filter-actions connection-id="2a53a5e0-eeff-4e2c-ab40-ea5688a2d5e2" dataset="main.app_hw_4_product" active-filter-id="EMPTY_FILTER" />
     <filter-actions connection-id="2a53a5e0-eeff-4e2c-ab40-ea5688a2d5e2" dataset="main.django_migrations" active-filter-id="EMPTY_FILTER" />
     <filter-actions connection-id="2a53a5e0-eeff-4e2c-ab40-ea5688a2d5e2" dataset="main.app_hw_3_product" active-filter-id="EMPTY_FILTER" />
     <filter-actions connection-id="2a53a5e0-eeff-4e2c-ab40-ea5688a2d5e2" dataset="main.app_hw_3_order" active-filter-id="EMPTY_FILTER" />
     <filter-actions connection-id="2a53a5e0-eeff-4e2c-ab40-ea5688a2d5e2" dataset="main.app_hw_3_user" active-filter-id="EMPTY_FILTER" />
     <filter-actions connection-id="2a53a5e0-eeff-4e2c-ab40-ea5688a2d5e2" dataset="main.app_hw_2_product" active-filter-id="EMPTY_FILTER" />
+    <filter-actions connection-id="2a53a5e0-eeff-4e2c-ab40-ea5688a2d5e2" dataset="main.auth_user" active-filter-id="EMPTY_FILTER" />
+    <filter-actions connection-id="2a53a5e0-eeff-4e2c-ab40-ea5688a2d5e2" dataset="main.app_hw_4_product" active-filter-id="EMPTY_FILTER" />
     <filter-actions connection-id="2a53a5e0-eeff-4e2c-ab40-ea5688a2d5e2" dataset="main.app_hw_2_user" active-filter-id="EMPTY_FILTER" />
   </component>
   <component name="DBNavigator.Project.ObjectQuickFilterManager">

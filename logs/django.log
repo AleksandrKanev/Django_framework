@@ -2369,3 +2369,403 @@ ModuleNotFoundError: No module named 'django.core.context_processors'
 [INFO    :   django.utils.autoreload] - 2024-01-28 10:49:10,069 : run_with_reloader @0668: Watching for file changes with StatReloader
 [INFO    :             django.server] - 2024-01-28 10:49:14,599 : log_message @0212: "GET /hw_4/img/1 HTTP/1.1" 200 210
 [INFO    :             django.server] - 2024-01-28 10:49:14,862 : log_message @0212: "GET /media/1662040170_j-50.jpg HTTP/1.1" 200 105004
+[INFO    :   django.utils.autoreload] - 2024-01-28 19:29:14,922 : run_with_reloader @0668: Watching for file changes with StatReloader
+[WARNING :            django.request] - 2024-01-28 19:29:17,158 : log_response @0241: Not Found: /
+[WARNING :             django.server] - 2024-01-28 19:29:17,159 : log_message @0212: "GET / HTTP/1.1" 404 2608
+[INFO    :             django.server] - 2024-01-28 19:29:25,269 : log_message @0212: "GET /admin/ HTTP/1.1" 302 0
+[INFO    :             django.server] - 2024-01-28 19:29:25,512 : log_message @0212: "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4359
+[INFO    :             django.server] - 2024-01-28 19:29:26,387 : log_message @0212: "GET /static/admin/css/login.css HTTP/1.1" 200 958
+[INFO    :             django.server] - 2024-01-28 19:29:26,392 : log_message @0212: "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2682
+[INFO    :             django.server] - 2024-01-28 19:29:26,393 : log_message @0212: "GET /static/admin/css/base.css HTTP/1.1" 200 21544
+[INFO    :             django.server] - 2024-01-28 19:29:26,403 : log_message @0212: "GET /static/admin/css/responsive.css HTTP/1.1" 200 17905
+[INFO    :             django.server] - 2024-01-28 19:29:26,409 : log_message @0212: "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+[INFO    :             django.server] - 2024-01-28 19:29:26,423 : log_message @0212: "GET /static/admin/js/theme.js HTTP/1.1" 200 1943
+[INFO    :             django.server] - 2024-01-28 19:29:26,437 : log_message @0212: "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+[INFO    :             django.server] - 2024-01-28 19:29:34,148 : log_message @0212: "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+[INFO    :             django.server] - 2024-01-28 19:29:34,221 : log_message @0212: "GET /admin/ HTTP/1.1" 200 5944
+[INFO    :             django.server] - 2024-01-28 19:29:34,279 : log_message @0212: "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+[INFO    :             django.server] - 2024-01-28 19:29:34,321 : log_message @0212: "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+[INFO    :             django.server] - 2024-01-28 19:29:34,322 : log_message @0212: "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+[INFO    :   django.utils.autoreload] - 2024-01-28 19:33:00,306 : trigger_reload @0266: C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\app_hw_5\admin.py changed, reloading.
+[INFO    :   django.utils.autoreload] - 2024-01-28 19:33:02,466 : run_with_reloader @0668: Watching for file changes with StatReloader
+[INFO    :   django.utils.autoreload] - 2024-01-28 19:33:25,732 : trigger_reload @0266: C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\app_hw_5\admin.py changed, reloading.
+[INFO    :   django.utils.autoreload] - 2024-01-28 19:33:26,903 : run_with_reloader @0668: Watching for file changes with StatReloader
+[INFO    :   django.utils.autoreload] - 2024-01-28 19:34:02,728 : trigger_reload @0266: C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\app_hw_5\admin.py changed, reloading.
+[INFO    :   django.utils.autoreload] - 2024-01-28 19:34:03,921 : run_with_reloader @0668: Watching for file changes with StatReloader
+[INFO    :             django.server] - 2024-01-28 19:34:37,518 : log_message @0212: "GET /admin/ HTTP/1.1" 200 7528
+[ERROR   :            django.request] - 2024-01-28 19:34:40,634 : log_response @0241: Internal Server Error: /admin/app_hw_5/user/
+Traceback (most recent call last):
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: app_hw_5_user
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\contrib\admin\options.py", line 714, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\contrib\admin\sites.py", line 240, in inner
+    return view(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\contrib\admin\options.py", line 1981, in changelist_view
+    cl = self.get_changelist_instance(request)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\contrib\admin\options.py", line 862, in get_changelist_instance
+    return ChangeList(
+           ^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\contrib\admin\views\main.py", line 145, in __init__
+    self.get_results(request)
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\contrib\admin\views\main.py", line 312, in get_results
+    result_count = paginator.count
+                   ^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\core\paginator.py", line 110, in count
+    return c()
+           ^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\db\models\query.py", line 618, in count
+    return self.query.get_count(using=self.db)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\db\models\sql\query.py", line 618, in get_count
+    return obj.get_aggregation(using, {"__count": Count("*")})["__count"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\db\models\sql\query.py", line 604, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: app_hw_5_user
+[ERROR   :             django.server] - 2024-01-28 19:34:40,657 : log_message @0212: "GET /admin/app_hw_5/user/ HTTP/1.1" 500 197082
+[INFO    :   django.utils.autoreload] - 2024-01-28 19:36:44,216 : run_with_reloader @0668: Watching for file changes with StatReloader
+[INFO    :             django.server] - 2024-01-28 19:36:46,535 : log_message @0212: "GET /admin/app_hw_5/user/ HTTP/1.1" 200 8554
+[INFO    :             django.server] - 2024-01-28 19:36:46,792 : log_message @0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :             django.server] - 2024-01-28 19:36:47,149 : log_message @0212: "GET /static/admin/css/changelists.css HTTP/1.1" 200 6811
+[INFO    :             django.server] - 2024-01-28 19:36:47,184 : log_message @0212: "GET /static/admin/js/core.js HTTP/1.1" 200 6208
+[INFO    :             django.server] - 2024-01-28 19:36:47,219 : log_message @0212: "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+[INFO    :             django.server] - 2024-01-28 19:36:47,230 : log_message @0212: "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+[INFO    :             django.server] - 2024-01-28 19:36:47,232 : log_message @0212: "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9042
+[INFO    :             django.server] - 2024-01-28 19:36:47,263 : log_message @0212: "GET /static/admin/js/actions.js HTTP/1.1" 200 8067
+[INFO    :             django.server] - 2024-01-28 19:36:47,306 : log_message @0212: "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+[INFO    :             django.server] - 2024-01-28 19:36:47,383 : log_message @0212: "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+[INFO    :             django.server] - 2024-01-28 19:36:47,477 : log_message @0212: "GET /static/admin/js/filters.js HTTP/1.1" 200 978
+[INFO    :             django.server] - 2024-01-28 19:36:47,637 : log_message @0212: "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+[INFO    :             django.server] - 2024-01-28 19:36:47,705 : log_message @0212: "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+[INFO    :             django.server] - 2024-01-28 19:38:10,863 : log_message @0212: "GET /admin/app_hw_5/user/add/ HTTP/1.1" 200 11261
+[INFO    :             django.server] - 2024-01-28 19:38:10,932 : log_message @0212: "GET /static/admin/css/forms.css HTTP/1.1" 200 9090
+[INFO    :             django.server] - 2024-01-28 19:38:10,942 : log_message @0212: "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+[INFO    :             django.server] - 2024-01-28 19:38:10,960 : log_message @0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :             django.server] - 2024-01-28 19:38:11,021 : log_message @0212: "GET /static/admin/css/widgets.css HTTP/1.1" 200 11800
+[INFO    :             django.server] - 2024-01-28 19:38:11,036 : log_message @0212: "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+[INFO    :             django.server] - 2024-01-28 19:38:41,343 : log_message @0212: "POST /admin/app_hw_5/user/add/ HTTP/1.1" 200 11598
+[INFO    :             django.server] - 2024-01-28 19:38:41,413 : log_message @0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :             django.server] - 2024-01-28 19:39:03,434 : log_message @0212: "POST /admin/app_hw_5/user/add/ HTTP/1.1" 302 0
+[INFO    :             django.server] - 2024-01-28 19:39:03,462 : log_message @0212: "GET /admin/app_hw_5/user/add/ HTTP/1.1" 200 11571
+[INFO    :             django.server] - 2024-01-28 19:39:03,664 : log_message @0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :             django.server] - 2024-01-28 19:39:03,750 : log_message @0212: "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+[INFO    :   django.utils.autoreload] - 2024-01-28 19:40:54,169 : run_with_reloader @0668: Watching for file changes with StatReloader
+[INFO    :             django.server] - 2024-01-28 19:40:59,087 : log_message @0212: "GET /admin/app_hw_5/user HTTP/1.1" 301 0
+[INFO    :             django.server] - 2024-01-28 19:40:59,238 : log_message @0212: "GET /admin/app_hw_5/user/ HTTP/1.1" 200 12113
+[INFO    :             django.server] - 2024-01-28 19:40:59,325 : log_message @0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :             django.server] - 2024-01-28 19:41:12,785 : log_message @0212: "GET /admin/app_hw_5/product/ HTTP/1.1" 200 11628
+[INFO    :             django.server] - 2024-01-28 19:41:12,848 : log_message @0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :             django.server] - 2024-01-28 19:41:19,145 : log_message @0212: "GET /admin/app_hw_5/order/ HTTP/1.1" 200 15769
+[INFO    :             django.server] - 2024-01-28 19:41:19,194 : log_message @0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :             django.server] - 2024-01-28 19:41:32,913 : log_message @0212: "GET /admin/app_hw_5/order/15/change/ HTTP/1.1" 200 13648
+[INFO    :             django.server] - 2024-01-28 19:41:32,978 : log_message @0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :             django.server] - 2024-01-28 19:41:33,146 : log_message @0212: "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 200 581
+[INFO    :             django.server] - 2024-01-28 19:41:59,780 : log_message @0212: "GET /admin/app_hw_5/product/ HTTP/1.1" 200 11628
+[INFO    :             django.server] - 2024-01-28 19:41:59,830 : log_message @0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :             django.server] - 2024-01-28 19:42:00,874 : log_message @0212: "GET /admin/app_hw_5/product/5/change/ HTTP/1.1" 200 12203
+[INFO    :             django.server] - 2024-01-28 19:42:00,926 : log_message @0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :             django.server] - 2024-01-28 19:42:34,866 : log_message @0212: "GET /admin/app_hw_5/user/ HTTP/1.1" 200 12113
+[INFO    :             django.server] - 2024-01-28 19:42:34,920 : log_message @0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :             django.server] - 2024-01-28 19:42:36,625 : log_message @0212: "GET /admin/app_hw_5/user/1/change/ HTTP/1.1" 200 11641
+[INFO    :             django.server] - 2024-01-28 19:42:36,687 : log_message @0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :             django.server] - 2024-01-28 19:42:39,786 : log_message @0212: "GET /admin/app_hw_5/order/ HTTP/1.1" 200 15769
+[INFO    :             django.server] - 2024-01-28 19:42:39,835 : log_message @0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :             django.server] - 2024-01-28 19:44:21,187 : log_message @0212: "GET /admin/app_hw_5/user/ HTTP/1.1" 200 12113
+[INFO    :             django.server] - 2024-01-28 19:44:21,239 : log_message @0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :             django.server] - 2024-01-28 19:44:51,256 : log_message @0212: "POST /admin/app_hw_5/user/ HTTP/1.1" 200 8772
+[INFO    :             django.server] - 2024-01-28 19:44:51,424 : log_message @0212: "GET /static/admin/js/cancel.js HTTP/1.1" 200 884
+[INFO    :             django.server] - 2024-01-28 19:44:54,606 : log_message @0212: "POST /admin/app_hw_5/user/ HTTP/1.1" 302 0
+[INFO    :             django.server] - 2024-01-28 19:44:54,635 : log_message @0212: "GET /admin/app_hw_5/user/ HTTP/1.1" 200 11859
+[INFO    :             django.server] - 2024-01-28 19:44:54,710 : log_message @0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :   django.utils.autoreload] - 2024-01-28 19:45:17,976 : trigger_reload @0266: C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\app_hw_5\admin.py changed, reloading.
+[INFO    :   django.utils.autoreload] - 2024-01-28 19:45:19,269 : run_with_reloader @0668: Watching for file changes with StatReloader
+[INFO    :   django.utils.autoreload] - 2024-01-28 19:45:59,949 : trigger_reload @0266: C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\app_hw_5\admin.py changed, reloading.
+[INFO    :   django.utils.autoreload] - 2024-01-28 19:46:01,253 : run_with_reloader @0668: Watching for file changes with StatReloader
+[INFO    :   django.utils.autoreload] - 2024-01-28 19:51:11,792 : trigger_reload @0266: C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\app_hw_5\admin.py changed, reloading.
+[INFO    :   django.utils.autoreload] - 2024-01-28 19:51:12,994 : run_with_reloader @0668: Watching for file changes with StatReloader
+[INFO    :             django.server] - 2024-01-28 19:51:16,640 : log_message @0212: "GET /admin/app_hw_5/user/ HTTP/1.1" 200 11716
+[INFO    :             django.server] - 2024-01-28 19:51:16,716 : log_message @0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :             django.server] - 2024-01-28 19:51:21,121 : log_message @0212: "GET /admin/app_hw_5/product/ HTTP/1.1" 200 11628
+[INFO    :             django.server] - 2024-01-28 19:51:21,169 : log_message @0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :             django.server] - 2024-01-28 19:51:30,238 : log_message @0212: "GET /admin/app_hw_5/order/ HTTP/1.1" 200 15769
+[INFO    :             django.server] - 2024-01-28 19:51:30,295 : log_message @0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :             django.server] - 2024-01-28 19:51:33,276 : log_message @0212: "GET /admin/app_hw_5/product/ HTTP/1.1" 200 11628
+[INFO    :             django.server] - 2024-01-28 19:51:33,326 : log_message @0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :             django.server] - 2024-01-28 19:51:34,767 : log_message @0212: "GET /admin/app_hw_5/product/5/change/ HTTP/1.1" 200 12203
+[INFO    :             django.server] - 2024-01-28 19:51:34,824 : log_message @0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :             django.server] - 2024-01-28 19:51:37,725 : log_message @0212: "GET /admin/app_hw_5/user/ HTTP/1.1" 200 11716
+[INFO    :             django.server] - 2024-01-28 19:51:37,778 : log_message @0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :             django.server] - 2024-01-28 19:52:00,559 : log_message @0212: "GET /admin/app_hw_5/product/ HTTP/1.1" 200 11628
+[INFO    :             django.server] - 2024-01-28 19:52:00,616 : log_message @0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :             django.server] - 2024-01-28 19:52:06,764 : log_message @0212: "GET /admin/app_hw_5/user/ HTTP/1.1" 200 11716
+[INFO    :             django.server] - 2024-01-28 19:52:06,848 : log_message @0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :             django.server] - 2024-01-28 19:52:09,155 : log_message @0212: "GET /admin/app_hw_5/product/ HTTP/1.1" 200 11628
+[INFO    :             django.server] - 2024-01-28 19:52:09,218 : log_message @0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :             django.server] - 2024-01-28 19:52:14,344 : log_message @0212: "GET /admin/app_hw_5/order/ HTTP/1.1" 200 15769
+[INFO    :             django.server] - 2024-01-28 19:52:14,401 : log_message @0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :             django.server] - 2024-01-28 19:52:20,707 : log_message @0212: "GET /admin/app_hw_5/order/ HTTP/1.1" 200 15769
+[INFO    :             django.server] - 2024-01-28 19:52:20,756 : log_message @0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :             django.server] - 2024-01-28 19:52:29,209 : log_message @0212: "GET /admin/app_hw_5/order/15/change/ HTTP/1.1" 200 13575
+[INFO    :             django.server] - 2024-01-28 19:52:29,275 : log_message @0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :             django.server] - 2024-01-28 19:52:37,703 : log_message @0212: "GET /admin/app_hw_5/user/ HTTP/1.1" 200 11716
+[INFO    :             django.server] - 2024-01-28 19:52:37,760 : log_message @0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :             django.server] - 2024-01-28 19:52:39,831 : log_message @0212: "GET /admin/app_hw_5/product/ HTTP/1.1" 200 11628
+[INFO    :             django.server] - 2024-01-28 19:52:39,886 : log_message @0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :             django.server] - 2024-01-28 19:52:41,945 : log_message @0212: "GET /admin/app_hw_5/order/ HTTP/1.1" 200 15769
+[INFO    :             django.server] - 2024-01-28 19:52:41,991 : log_message @0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :   django.utils.autoreload] - 2024-01-28 19:53:28,456 : trigger_reload @0266: C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\app_hw_5\admin.py changed, reloading.
+[INFO    :   django.utils.autoreload] - 2024-01-28 19:53:30,996 : run_with_reloader @0668: Watching for file changes with StatReloader
+[INFO    :             django.server] - 2024-01-28 19:53:31,527 : log_message @0212: "GET /admin/app_hw_5/order/ HTTP/1.1" 200 17865
+[INFO    :             django.server] - 2024-01-28 19:53:31,575 : log_message @0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :             django.server] - 2024-01-28 19:53:38,187 : log_message @0212: "GET /admin/app_hw_5/product/ HTTP/1.1" 200 12145
+[INFO    :             django.server] - 2024-01-28 19:53:38,254 : log_message @0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :             django.server] - 2024-01-28 19:53:40,675 : log_message @0212: "GET /admin/app_hw_5/order/ HTTP/1.1" 200 17865
+[INFO    :             django.server] - 2024-01-28 19:53:40,728 : log_message @0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :             django.server] - 2024-01-28 19:54:37,631 : log_message @0212: "GET /admin/app_hw_5/user/ HTTP/1.1" 200 12360
+[INFO    :             django.server] - 2024-01-28 19:54:37,688 : log_message @0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :   django.utils.autoreload] - 2024-01-28 19:56:09,769 : trigger_reload @0266: C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\app_hw_5\admin.py changed, reloading.
+[INFO    :   django.utils.autoreload] - 2024-01-28 19:56:11,056 : run_with_reloader @0668: Watching for file changes with StatReloader
+[INFO    :             django.server] - 2024-01-28 19:56:11,514 : log_message @0212: "GET /admin/app_hw_5/user/ HTTP/1.1" 200 12664
+[INFO    :             django.server] - 2024-01-28 19:56:11,562 : log_message @0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :             django.server] - 2024-01-28 19:56:11,738 : log_message @0212: "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1097
+[INFO    :             django.server] - 2024-01-28 19:56:18,933 : log_message @0212: "GET /admin/app_hw_5/user/?o=2.1 HTTP/1.1" 200 13314
+[INFO    :             django.server] - 2024-01-28 19:56:18,980 : log_message @0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :             django.server] - 2024-01-28 19:56:21,039 : log_message @0212: "GET /admin/app_hw_5/user/?o=1 HTTP/1.1" 200 12820
+[INFO    :             django.server] - 2024-01-28 19:56:21,090 : log_message @0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :             django.server] - 2024-01-28 19:56:22,079 : log_message @0212: "GET /admin/app_hw_5/user/?o=2.1 HTTP/1.1" 200 13314
+[INFO    :             django.server] - 2024-01-28 19:56:22,165 : log_message @0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :             django.server] - 2024-01-28 19:56:23,268 : log_message @0212: "GET /admin/app_hw_5/user/?o=-2.1 HTTP/1.1" 200 13324
+[INFO    :             django.server] - 2024-01-28 19:56:23,318 : log_message @0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :             django.server] - 2024-01-28 19:56:24,049 : log_message @0212: "GET /admin/app_hw_5/user/?o=2.1 HTTP/1.1" 200 13314
+[INFO    :             django.server] - 2024-01-28 19:56:24,098 : log_message @0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :             django.server] - 2024-01-28 19:56:24,741 : log_message @0212: "GET /admin/app_hw_5/user/?o=-2.1 HTTP/1.1" 200 13324
+[INFO    :             django.server] - 2024-01-28 19:56:24,793 : log_message @0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :             django.server] - 2024-01-28 19:56:26,122 : log_message @0212: "GET /admin/app_hw_5/user/?o=3.-2.1 HTTP/1.1" 200 13743
+[INFO    :             django.server] - 2024-01-28 19:56:26,171 : log_message @0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :             django.server] - 2024-01-28 19:56:27,785 : log_message @0212: "GET /admin/app_hw_5/user/?o=-3.-2.1 HTTP/1.1" 200 13755
+[INFO    :             django.server] - 2024-01-28 19:56:27,836 : log_message @0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :             django.server] - 2024-01-28 19:56:29,073 : log_message @0212: "GET /admin/app_hw_5/user/?o=3.-2.1 HTTP/1.1" 200 13743
+[INFO    :             django.server] - 2024-01-28 19:56:29,124 : log_message @0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :             django.server] - 2024-01-28 19:56:29,817 : log_message @0212: "GET /admin/app_hw_5/user/?o=-3.-2.1 HTTP/1.1" 200 13755
+[INFO    :             django.server] - 2024-01-28 19:56:29,876 : log_message @0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :             django.server] - 2024-01-28 19:56:30,568 : log_message @0212: "GET /admin/app_hw_5/user/?o=3.-2.1 HTTP/1.1" 200 13743
+[INFO    :             django.server] - 2024-01-28 19:56:30,614 : log_message @0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :             django.server] - 2024-01-28 19:56:31,231 : log_message @0212: "GET /admin/app_hw_5/user/?o=-3.-2.1 HTTP/1.1" 200 13755
+[INFO    :             django.server] - 2024-01-28 19:56:31,289 : log_message @0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :             django.server] - 2024-01-28 19:56:31,941 : log_message @0212: "GET /admin/app_hw_5/user/?o=3.-2.1 HTTP/1.1" 200 13743
+[INFO    :             django.server] - 2024-01-28 19:56:31,995 : log_message @0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :             django.server] - 2024-01-28 19:56:34,497 : log_message @0212: "GET /admin/app_hw_5/user/?o=3.1 HTTP/1.1" 200 13314
+[INFO    :             django.server] - 2024-01-28 19:56:34,555 : log_message @0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :             django.server] - 2024-01-28 19:56:36,699 : log_message @0212: "GET /admin/app_hw_5/user/?o=-3.1 HTTP/1.1" 200 13324
+[INFO    :             django.server] - 2024-01-28 19:56:36,745 : log_message @0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :             django.server] - 2024-01-28 19:56:37,806 : log_message @0212: "GET /admin/app_hw_5/user/?o=3.1 HTTP/1.1" 200 13314
+[INFO    :             django.server] - 2024-01-28 19:56:37,862 : log_message @0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :             django.server] - 2024-01-28 19:56:38,461 : log_message @0212: "GET /admin/app_hw_5/user/?o=-3.1 HTTP/1.1" 200 13324
+[INFO    :             django.server] - 2024-01-28 19:56:38,510 : log_message @0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :             django.server] - 2024-01-28 19:56:39,081 : log_message @0212: "GET /admin/app_hw_5/user/?o=3.1 HTTP/1.1" 200 13314
+[INFO    :             django.server] - 2024-01-28 19:56:39,135 : log_message @0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :             django.server] - 2024-01-28 19:56:41,351 : log_message @0212: "GET /admin/app_hw_5/user/?o=1 HTTP/1.1" 200 12820
+[INFO    :             django.server] - 2024-01-28 19:56:41,397 : log_message @0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :             django.server] - 2024-01-28 19:56:44,662 : log_message @0212: "GET /admin/app_hw_5/product/ HTTP/1.1" 200 12449
+[INFO    :             django.server] - 2024-01-28 19:56:44,725 : log_message @0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :             django.server] - 2024-01-28 19:56:50,668 : log_message @0212: "GET /admin/app_hw_5/order/ HTTP/1.1" 200 18169
+[INFO    :             django.server] - 2024-01-28 19:56:50,713 : log_message @0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :             django.server] - 2024-01-28 19:56:52,560 : log_message @0212: "GET /admin/app_hw_5/product/ HTTP/1.1" 200 12449
+[INFO    :             django.server] - 2024-01-28 19:56:52,618 : log_message @0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :             django.server] - 2024-01-28 19:56:55,185 : log_message @0212: "GET /admin/app_hw_5/order/ HTTP/1.1" 200 18169
+[INFO    :             django.server] - 2024-01-28 19:56:55,234 : log_message @0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :             django.server] - 2024-01-28 19:57:04,269 : log_message @0212: "GET /admin/app_hw_5/order/?o=-3 HTTP/1.1" 200 18603
+[INFO    :             django.server] - 2024-01-28 19:57:04,324 : log_message @0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :             django.server] - 2024-01-28 19:57:05,290 : log_message @0212: "GET /admin/app_hw_5/order/?o=3 HTTP/1.1" 200 18585
+[INFO    :             django.server] - 2024-01-28 19:57:05,340 : log_message @0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :             django.server] - 2024-01-28 19:57:06,175 : log_message @0212: "GET /admin/app_hw_5/order/?o=-3 HTTP/1.1" 200 18603
+[INFO    :             django.server] - 2024-01-28 19:57:06,231 : log_message @0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :             django.server] - 2024-01-28 19:57:09,275 : log_message @0212: "GET /admin/app_hw_5/order/?o=3 HTTP/1.1" 200 18585
+[INFO    :             django.server] - 2024-01-28 19:57:09,328 : log_message @0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :   django.utils.autoreload] - 2024-01-28 19:58:38,648 : trigger_reload @0266: C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\app_hw_5\admin.py changed, reloading.
+[INFO    :   django.utils.autoreload] - 2024-01-28 19:58:40,060 : run_with_reloader @0668: Watching for file changes with StatReloader
+[INFO    :             django.server] - 2024-01-28 19:58:40,609 : log_message @0212: "GET /admin/app_hw_5/order/?o=3 HTTP/1.1" 200 20031
+[INFO    :             django.server] - 2024-01-28 19:58:40,660 : log_message @0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :             django.server] - 2024-01-28 19:58:46,392 : log_message @0212: "GET /admin/app_hw_5/order/?o=3&total_price=640.00 HTTP/1.1" 200 12668
+[INFO    :             django.server] - 2024-01-28 19:58:46,446 : log_message @0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :             django.server] - 2024-01-28 19:58:55,888 : log_message @0212: "GET /admin/app_hw_5/product/ HTTP/1.1" 200 13015
+[INFO    :             django.server] - 2024-01-28 19:58:55,941 : log_message @0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :             django.server] - 2024-01-28 19:58:58,255 : log_message @0212: "GET /admin/app_hw_5/user/ HTTP/1.1" 200 13238
+[INFO    :             django.server] - 2024-01-28 19:58:58,308 : log_message @0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :   django.utils.autoreload] - 2024-01-28 20:02:13,173 : trigger_reload @0266: C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\app_hw_5\admin.py changed, reloading.
+[INFO    :   django.utils.autoreload] - 2024-01-28 20:02:14,352 : run_with_reloader @0668: Watching for file changes with StatReloader
+[INFO    :             django.server] - 2024-01-28 20:02:14,886 : log_message @0212: "GET /admin/app_hw_5/user/ HTTP/1.1" 200 13700
+[INFO    :             django.server] - 2024-01-28 20:02:15,015 : log_message @0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :             django.server] - 2024-01-28 20:02:15,053 : log_message @0212: "GET /static/admin/img/search.svg HTTP/1.1" 200 458
+[INFO    :             django.server] - 2024-01-28 20:02:27,576 : log_message @0212: "GET /admin/app_hw_5/user/?q=User5 HTTP/1.1" 200 12091
+[INFO    :             django.server] - 2024-01-28 20:02:27,690 : log_message @0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :             django.server] - 2024-01-28 20:02:31,145 : log_message @0212: "GET /admin/app_hw_5/product/ HTTP/1.1" 200 13478
+[INFO    :             django.server] - 2024-01-28 20:02:31,201 : log_message @0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :             django.server] - 2024-01-28 20:02:36,135 : log_message @0212: "GET /admin/app_hw_5/order/ HTTP/1.1" 200 19960
+[INFO    :             django.server] - 2024-01-28 20:02:36,185 : log_message @0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :             django.server] - 2024-01-28 20:02:48,602 : log_message @0212: "GET /admin/app_hw_5/order/?q=2024 HTTP/1.1" 200 20649
+[INFO    :             django.server] - 2024-01-28 20:02:48,661 : log_message @0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :             django.server] - 2024-01-28 20:02:51,056 : log_message @0212: "GET /admin/app_hw_5/order/1/change/?_changelist_filters=q%3D2024 HTTP/1.1" 200 13676
+[INFO    :             django.server] - 2024-01-28 20:02:51,113 : log_message @0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :   django.utils.autoreload] - 2024-01-28 20:11:32,452 : trigger_reload @0266: C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\app_hw_5\admin.py changed, reloading.
+[INFO    :   django.utils.autoreload] - 2024-01-28 20:11:34,030 : run_with_reloader @0668: Watching for file changes with StatReloader
+[INFO    :   django.utils.autoreload] - 2024-01-28 20:11:53,673 : run_with_reloader @0668: Watching for file changes with StatReloader
+[INFO    :   django.utils.autoreload] - 2024-01-28 20:12:51,869 : trigger_reload @0266: C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\app_hw_5\admin.py changed, reloading.
+[INFO    :   django.utils.autoreload] - 2024-01-28 20:12:53,042 : run_with_reloader @0668: Watching for file changes with StatReloader
+[INFO    :             django.server] - 2024-01-28 20:12:55,679 : log_message @0212: "GET /admin/app_hw_5/user/ HTTP/1.1" 200 13700
+[INFO    :             django.server] - 2024-01-28 20:12:55,833 : log_message @0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[ERROR   :            django.request] - 2024-01-28 20:12:59,705 : log_response @0241: Internal Server Error: /admin/app_hw_5/user/2/change/
+Traceback (most recent call last):
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\contrib\admin\options.py", line 835, in get_form
+    return modelform_factory(self.model, **defaults)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\forms\models.py", line 651, in modelform_factory
+    return type(form)(class_name, (form,), form_class_attrs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\forms\models.py", line 331, in __new__
+    raise FieldError(message)
+django.core.exceptions.FieldError: Unknown field(s) (price, quantity) specified for User
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\contrib\admin\options.py", line 714, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\contrib\admin\sites.py", line 240, in inner
+    return view(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\contrib\admin\options.py", line 1944, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\contrib\admin\options.py", line 1802, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\contrib\admin\options.py", line 1837, in _changeform_view
+    ModelForm = self.get_form(
+                ^^^^^^^^^^^^^^
+  File "C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\venv\Lib\site-packages\django\contrib\admin\options.py", line 837, in get_form
+    raise FieldError(
+django.core.exceptions.FieldError: Unknown field(s) (price, quantity) specified for User. Check fields/fieldsets/exclude attributes of class UserAdmin.
+[ERROR   :             django.server] - 2024-01-28 20:12:59,717 : log_message @0212: "GET /admin/app_hw_5/user/2/change/ HTTP/1.1" 500 147570
+[INFO    :   django.utils.autoreload] - 2024-01-28 20:13:21,676 : trigger_reload @0266: C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\app_hw_5\admin.py changed, reloading.
+[INFO    :   django.utils.autoreload] - 2024-01-28 20:13:22,916 : run_with_reloader @0668: Watching for file changes with StatReloader
+[INFO    :             django.server] - 2024-01-28 20:13:23,420 : log_message @0212: "GET /admin/app_hw_5/user/2/change/ HTTP/1.1" 200 12397
+[INFO    :             django.server] - 2024-01-28 20:13:23,476 : log_message @0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :             django.server] - 2024-01-28 20:13:23,623 : log_message @0212: "GET /static/admin/js/collapse.js HTTP/1.1" 200 1803
+[INFO    :   django.utils.autoreload] - 2024-01-28 20:14:08,857 : trigger_reload @0266: C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\app_hw_5\admin.py changed, reloading.
+[INFO    :   django.utils.autoreload] - 2024-01-28 20:14:10,101 : run_with_reloader @0668: Watching for file changes with StatReloader
+[INFO    :             django.server] - 2024-01-28 20:14:10,627 : log_message @0212: "GET /admin/app_hw_5/user/2/change/ HTTP/1.1" 200 12402
+[INFO    :             django.server] - 2024-01-28 20:14:10,680 : log_message @0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :   django.utils.autoreload] - 2024-01-28 20:19:15,735 : trigger_reload @0266: C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\app_hw_5\admin.py changed, reloading.
+[INFO    :   django.utils.autoreload] - 2024-01-28 20:19:16,865 : run_with_reloader @0668: Watching for file changes with StatReloader
+[INFO    :             django.server] - 2024-01-28 20:19:20,538 : log_message @0212: "GET /admin/app_hw_5/order/ HTTP/1.1" 200 19960
+[INFO    :             django.server] - 2024-01-28 20:19:20,604 : log_message @0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :             django.server] - 2024-01-28 20:19:22,885 : log_message @0212: "GET /admin/app_hw_5/order/1/change/ HTTP/1.1" 200 12926
+[INFO    :             django.server] - 2024-01-28 20:19:22,937 : log_message @0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :             django.server] - 2024-01-28 20:19:31,615 : log_message @0212: "GET /admin/app_hw_5/product/add/?_to_field=id&_popup=1 HTTP/1.1" 200 6932
+[INFO    :             django.server] - 2024-01-28 20:19:31,678 : log_message @0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :             django.server] - 2024-01-28 20:20:11,501 : log_message @0212: "GET /admin/app_hw_5/product/ HTTP/1.1" 200 13478
+[INFO    :             django.server] - 2024-01-28 20:20:11,560 : log_message @0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :             django.server] - 2024-01-28 20:20:13,465 : log_message @0212: "GET /admin/app_hw_5/product/1/change/ HTTP/1.1" 200 12199
+[INFO    :             django.server] - 2024-01-28 20:20:13,523 : log_message @0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :             django.server] - 2024-01-28 20:20:59,004 : log_message @0212: "GET /admin/app_hw_5/user/ HTTP/1.1" 200 13700
+[INFO    :             django.server] - 2024-01-28 20:20:59,060 : log_message @0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :             django.server] - 2024-01-28 20:21:01,843 : log_message @0212: "GET /admin/app_hw_5/product/ HTTP/1.1" 200 13478
+[INFO    :             django.server] - 2024-01-28 20:21:01,897 : log_message @0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :             django.server] - 2024-01-28 20:21:04,394 : log_message @0212: "GET /admin/app_hw_5/order/ HTTP/1.1" 200 19960
+[INFO    :             django.server] - 2024-01-28 20:21:04,449 : log_message @0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :             django.server] - 2024-01-28 20:21:08,681 : log_message @0212: "GET /admin/app_hw_5/order/7/change/ HTTP/1.1" 200 12921
+[INFO    :             django.server] - 2024-01-28 20:21:08,733 : log_message @0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :             django.server] - 2024-01-28 20:21:26,697 : log_message @0212: "GET /admin/app_hw_5/user/ HTTP/1.1" 200 13700
+[INFO    :             django.server] - 2024-01-28 20:21:26,755 : log_message @0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :             django.server] - 2024-01-28 20:21:28,042 : log_message @0212: "GET /admin/app_hw_5/user/2/change/ HTTP/1.1" 200 12402
+[INFO    :             django.server] - 2024-01-28 20:21:28,090 : log_message @0212: "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[INFO    :   django.utils.autoreload] - 2024-01-28 20:23:51,187 : trigger_reload @0266: C:\Users\Kanev\Desktop\Фреймворк Django (семинары)\home_works\app_hw_5\admin.py changed, reloading.
+[INFO    :   django.utils.autoreload] - 2024-01-28 20:23:52,408 : run_with_reloader @0668: Watching for file changes with StatReloader

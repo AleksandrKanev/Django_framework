@@ -26,4 +26,5 @@ urlpatterns = [
     path('hw_2/', include('app_hw_2.urls')),
     path('hw_3/', include('app_hw_3.urls')),
     path('hw_4/', include('app_hw_4.urls')),
+    # path('hw_5/', include('app_hw_5.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
