@@ -37,7 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'app_hw_1',
     'app_hw_2',
-    'app_hw_3'
+    'app_hw_3',
+    'app_hw_4'
 ]
 
 MIDDLEWARE = [
@@ -155,3 +156,6 @@ LOGGING = {
         },
     },
 }
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = BASE_DIR / 'media'
